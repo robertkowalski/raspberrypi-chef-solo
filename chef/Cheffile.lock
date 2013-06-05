@@ -1,14 +1,8 @@
 SITE
   remote: http://community.opscode.com/api/v1
   specs:
-    apt (1.9.0)
-
-PATH
-  remote: custom_cookbooks/openssh
-  specs:
-    openssh (0.8.4)
+    apt (1.10.0)
 
 DEPENDENCIES
   apt (>= 0)
-  openssh (>= 0)
 

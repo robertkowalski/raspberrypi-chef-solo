@@ -3,11 +3,13 @@ $:.unshift 'lib'
 require 'raspberry'
 require 'capistrano-helpers'
 
+
 set :application, 'raspberrypi-chef-solo'
-set :repository,  'git://github.com/andrzejsliwa/raspberrypi-chef-solo.git'
+set :repository,  'git://github.com/robertkowalski/raspberrypi-chef-solo.git'
 set :branch,      'master'
 
-server 'pi.andrzejsliwa.com', :raspberry
+server '192.168.178.33', :raspberry
+#server 'rockoartischocko.no-ip.biz', :raspberry
 
 set :user,      'pi'
 
@@ -16,7 +18,7 @@ set :rasp_pi, Raspberry.new(
   chef_version: '11.2.0',
   chef_dir:     'chef',
   chef_role:    'pi',
-  noip_account: 'andrzej.sliwa@i-tool.eu',
+  noip_account: 'rok@kowalski.gd',
   pi:           find_servers(roles: :raspberry)[0]
 )
 
