@@ -40,7 +40,7 @@ class Raspberry
 
     upload_key
 
-    install_noip
+    #install_noip
 
     logger.info 'bootstrap done.'
   end
