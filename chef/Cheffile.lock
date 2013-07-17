@@ -3,6 +3,22 @@ SITE
   specs:
     apt (1.10.0)
 
+GIT
+  remote: git@github.com:robertkowalski/chef-pimodulestemp.git
+  ref: master
+  sha: a74006f407400b891d34c620d98750f8e642dedf
+  specs:
+    chef-pimodulestemp (1.0.0)
+
+GIT
+  remote: git@github.com:robertkowalski/chef-prepare-weather.git
+  ref: master
+  sha: 3448adf72f704a5efdd3f7d2d1fe94e826e02a69
+  specs:
+    chef-prepare-weather (1.0.0)
+
 DEPENDENCIES
   apt (>= 0)
+  chef-pimodulestemp (>= 0)
+  chef-prepare-weather (>= 0)
 

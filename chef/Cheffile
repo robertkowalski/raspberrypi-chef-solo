@@ -1,3 +1,9 @@
 site 'http://community.opscode.com/api/v1'
 
 cookbook 'apt'
+
+cookbook 'chef-pimodulestemp',
+  :git => 'git@github.com:robertkowalski/chef-pimodulestemp.git'
+
+cookbook 'chef-prepare-weather',
+  :git => 'git@github.com:robertkowalski/chef-prepare-weather.git'
