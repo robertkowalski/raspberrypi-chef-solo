@@ -29,8 +29,7 @@ class Raspberry
 
     pkgs_to_install = [
       'build-essential git-core',
-      'ruby1.9.3 ruby1.9.1-dev libopenssl-ruby libxml2-dev libxslt-dev',
-      'htop mc tmux',
+      'ruby1.9.3 ruby1.9.1-dev libopenssl-ruby libxml2-dev libxslt-dev'
     ].join(' ')
     apt_install(pkgs_to_install)
 
